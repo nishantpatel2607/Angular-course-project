@@ -1,0 +1,14 @@
+<p>
+  <input type="text" [(ngModel)]='userValue'>
+</p>
+<div>
+  <button (click)="toggle()">Toggle</button>
+</div>
+
+<div>
+  <life-cycle-child [inputPropery]='userValue' *ngIf="showChild"></life-cycle-child>
+
+  <!-- <life-cycle-child *ngIf="showChild"></life-cycle-child> -->
+</div>
+
+

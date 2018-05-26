@@ -1,0 +1,13 @@
+<button (click)="loadCourses()">Load</button>
+<div *ngIf="courses else loading">
+  <ul>
+    
+    <li *ngFor="let course of courses">  
+      {{course.name}}
+    </li>
+  </ul>
+</div>
+
+<ng-template #loading>
+  <div>Loading...</div> 
+</ng-template>

@@ -1,0 +1,62 @@
+<div class="well">
+  <form [formGroup]="form" (ngSubmit)="signUp()"> 
+      <div class="form-group"> 
+          <label for="fullName">Full Name</label>
+          <input formControlName="fullName" id="fullName" type="text" class="form-control" />
+          <div *ngIf="fullName.touched && fullName.invalid" class="alert alert-danger">
+              <div *ngIf="fullName.errors.required">Please enter Full Name.</div>
+          </div>
+      </div>
+      <div formGroupName="address">
+          <div class="form-group">
+              <label for="address1">Address 1</label>
+              <input formControlName="address1" id="address1" type="text" class="form-control" />
+              <div *ngIf="address1.touched && address1.invalid" class="alert alert-danger">
+                  <div *ngIf="address1.errors.required">Please enter Address 1.</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="address2">Address 2</label>
+              <input formControlName="address2" id="address2" type="text" class="form-control" />
+
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input formControlName="email" id="email" type="email" class="form-control" (onfocus)="flag=true" (onblur) = "flag=false" />
+          <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+              <div *ngIf="email.errors.required">Please enter email.</div>
+              <div *ngIf="email.errors.email">Please enter valid email.</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+
+          <input formControlName="emailSubscription" id="subscription" type="checkbox" class="form-check-input">Subscribe to new letter
+      </div>
+
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input formControlName="password" id="password" type="password" class="form-control" />
+          <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+              <div *ngIf="password.errors.required">Please enter password.</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input formControlName="confirmPassword" id="confirmPassword" type="password" class="form-control" />
+          <div *ngIf="confirmPassword.touched && confirmPassword.invalid" class="alert alert-danger">
+              <div *ngIf="confirmPassword.errors.required">Please enter confirm password.</div>
+          </div>
+          <!-- Here we are checking form level validation comparing two password fields -->
+          <div *ngIf="confirmPassword.valid && form.invalid && form.errors.passwordsShouldMatch" class="alert alert-danger">
+              Passwords do not match.
+          </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Sign Up</button>
+  </form>
+
+</div>

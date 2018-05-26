@@ -1,0 +1,13 @@
+
+
+<ng-template #coloredDivTemplate let-background="backColor" >
+  <div style="height: 30px" [ngStyle]="{'background-color': background}">{{background}}</div> 
+</ng-template> 
+ 
+<ng-container *ngTemplateOutlet="coloredDivTemplate; context:colorset1"> 
+  
+</ng-container>
+
+<ng-container *ngTemplateOutlet="coloredDivTemplate; context:colorset2">
+  
+</ng-container>

@@ -1,0 +1,24 @@
+<div>
+  <p>
+  <input #a type="number" (keyup)="setA(a.value)"/>
+</p>
+<p> 
+  <input #b type="number" (keyup)="setB(b.value)"/>
+</p>
+<p>
+  <button (click)=calculate()>Calculate</button>
+</p> 
+<p>
+  {{sum}}
+</p>
+<p>
+    {{sub}}
+  </p>
+  <p>
+      {{mul}}
+    </p>
+    <p>
+        {{divide}}
+      </p>
+      
+</div>

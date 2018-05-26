@@ -1,0 +1,10 @@
+<div (click)="onDivClicked()">
+  <button (click)="onSave($event)">Save</button>
+</div>
+<br>
+
+<div>
+  <input (keyup) ="onKeyUp($event)"/>
+  <br><br>
+  <input (keyup.enter) ="onKeyUp2()"/>
+</div>

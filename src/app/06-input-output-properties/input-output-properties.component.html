@@ -1,0 +1,12 @@
+<div style="background-color: lightgray; height:200px">
+  Parent component
+  <br>
+  <button (click)="setColor('green')">Green</button>
+  <button (click)="setColor('blue')">Blue</button>
+  <br>
+  <label>Output from child component : </label>{{recievedValue}}
+
+  <child-component [backColor]='selColor'> </child-component>
+  <child-component2 (ParametersChanged)="RecievedParameters($event)"></child-component2>
+
+</div>

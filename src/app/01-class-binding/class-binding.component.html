@@ -1,0 +1,10 @@
+<div style="height: 40px" 
+ [ngClass]="isValid ? 'Valid' : 'Invalid'">  <!--'Valid':isValid,'Invalid':!isValid -->
+</div>
+<p></p>
+<div style="height: 40px" 
+ [class.Valid]="isValid" [class.Invalid]="!isValid">  <!--'Valid':isValid,'Invalid':!isValid -->
+</div>
+
+<button (click) = "changeState()">Change</button>
+

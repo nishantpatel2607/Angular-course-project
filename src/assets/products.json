@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "productCode": "A1001",
+    "productName": "Oil paint box",
+    "price": 150
+},
+{
+    "id": 2,
+    "productCode": "A1002",
+    "productName": "Paint brush",
+    "price": 100
+},
+{
+    "id": 3,
+    "productCode": "A1003",
+    "productName": "Roller",
+    "price": 200
+},
+{
+    "id": 4,
+    "productCode": "A1004",
+    "productName": "Acrylic Paint",
+    "price": 200
+},
+{
+    "id": 5,
+    "productCode": "A1005",
+    "productName": "Pastel",
+    "price": 100
+},
+{
+    "id": 6,
+    "productCode": "A1006",
+    "productName": "Water color",
+    "price": 200
+},
+{
+    "id": 7,
+    "productCode": "A1007",
+    "productName": "Canvas",
+    "price": 250
+},
+{
+    "id": 8,
+    "productCode": "A1008",
+    "productName": "Charcoal",
+    "price": 100
+},
+{
+    "id": 9,
+    "productCode": "A1009",
+    "productName": "Skectch book",
+    "price": 50
+},
+{
+    "id": 10,
+    "productCode": "A1010",
+    "productName": "Easel",
+    "price": 200
+}
+]
