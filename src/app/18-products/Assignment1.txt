@@ -1,0 +1,5 @@
+Create a component to display employee records in a table.
+An employee record has following fields:
+    employee No, Name, Designation, Department, salary
+
+Host your data on MyJson.com site. Use service to get the data from the server 

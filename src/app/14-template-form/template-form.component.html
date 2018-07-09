@@ -1,5 +1,10 @@
+<!--In a template driven form, all the validation rules are specified in html template-->
+
+<!--#contact is the name of the form object created by ngForm-->
 <form #contact = "ngForm" (ngSubmit)="submit(contact)">
-  
+  <!--The following field definition needs ngModel and set the name property. This will
+  create a form control object with the name fullname. Custom validations can be
+achieved by specifying custom directives in the field-->
   <div class="form-group"> 
     <label for="fullName">Full Name</label>
     <input 

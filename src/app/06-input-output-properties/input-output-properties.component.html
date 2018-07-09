@@ -6,7 +6,10 @@
   <br>
   <label>Output from child component : </label>{{recievedValue}}
 
+  <!--The selected color is passed to input property backcolor -->
   <child-component [backColor]='selColor'> </child-component>
+
+  <!--Child components send the value to the parent component using an event-->
   <child-component2 (ParametersChanged)="RecievedParameters($event)"></child-component2>
 
 </div>

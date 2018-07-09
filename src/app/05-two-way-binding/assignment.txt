@@ -1,0 +1,20 @@
+Create a page that accepts following fields:
+Name
+Class
+Marks1
+Marks2
+Marks3
+
+Calculate percentage marks and display if student is pass or fail
+
+Show the marksheet in adjacent panel in tabular format
+
+==============================================================================
+| Name:
+| Class:
+==============================================================================
+|Subject 1             |Subject 2                    |Subject 3
+===============================================================================
+|Marks 1               |Marks 2                      |Marks 3
+===============================================================================
+| Percentage:                           |Result: Pass(in green color)/ Fail(in red color)

@@ -13,7 +13,7 @@ if Guard
 @Injectable()
 export class TestParamGuard implements CanActivate{
   
-  canActivate(route: ActivatedRouteSnapshot) : boolean{
+  canActivate(route: ActivatedRouteSnapshot) : boolean{ 
     let id = +route.url[2].path;
     if (isNaN(id) || id > 10){
       alert('Invalid Id');

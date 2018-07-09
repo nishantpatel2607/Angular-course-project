@@ -1,4 +1,7 @@
 <button (click) = 'testngIf()'>Demonstrate ngIf</button>
+<!--ngIf directive completely removes the element from DOM-->
 <div style="background-color: lightgray; height:200px" *ngIf="visibleFlag" ></div>
 
+<!--Hidden attribute makes the element invisible but remain in DOM structure
+For frequent toggling better to use hidden attribute instead of ngIf-->
 <div style="background-color: lightpink; height:200px;margin-top:150px" [hidden]="!visibleFlag" ></div>

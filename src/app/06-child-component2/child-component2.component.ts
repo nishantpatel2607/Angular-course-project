@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ChildComponent2Component implements OnInit {
 
+  //Event declaration
   @Output('ParametersChanged') ParametersChanged = new EventEmitter();
   constructor() { }
 
@@ -14,6 +15,7 @@ export class ChildComponent2Component implements OnInit {
   }
 
   btnClick(value) {
+    //emitting an event and sending back an object to parent component
     this.ParametersChanged.emit({InputText: value});
   }
 

@@ -17,7 +17,7 @@ life cycles hooks execution order:
   
   https://angular.io/guide/lifecycle-hooks
  */
-
+ 
 import { Component, OnInit } from '@angular/core';
 
 @Component({

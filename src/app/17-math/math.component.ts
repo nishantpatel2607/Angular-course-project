@@ -1,3 +1,7 @@
+//This example demonstrates the use of service.
+//A service object is provided through dependency injection 
+//Please refer the file math.service.ts
+
 import { Component, OnInit } from '@angular/core'; 
 import { MathService } from '../math.service';
 

@@ -1,8 +1,12 @@
+<!--Here we are connecting element events with the function in code.ngForm
+$event passes the event information to the code. -->
+
 <div (click)="onDivClicked()">
   <button (click)="onSave($event)">Save</button>
 </div>
 <br>
 
+<!--In the below code we are filter the events. They can be filtered in code or in the template-->
 <div>
   <input (keyup) ="onKeyUp($event)"/>
   <br><br>

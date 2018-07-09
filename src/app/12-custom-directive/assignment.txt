@@ -1,0 +1,5 @@
+Create a custome directive which validates the value, should be present between given range.
+Directive should accept two arguments. 'lower limit' and 'upper limit'
+If the value set in text box doesn't lie between this limit then its border should be colored red
+
+similarly create another directive to check if the entered value is correct email address

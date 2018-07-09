@@ -2,7 +2,13 @@
  
 <ul>
 
+  <!--Execute the following code first and inspect the elements when you click load button.
+  Everytime you click on load button it recreates all the list items-->
     <!-- <li *ngFor = "let course of courses"> --> 
+  
+  <!--On adding trackby the elements present in the list will not be redrawn. This is helpful when
+  the collection is constant that is no change is made in existing elements. 
+Only new elements will be drawn in the list-->
   <li *ngFor = "let course of courses; trackBy: trackCourse ">
     {{course.name}} 
   </li>

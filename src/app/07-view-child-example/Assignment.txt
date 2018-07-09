@@ -1,0 +1,5 @@
+1.create a texbox whose border color changes if invalid value is inserted in it.
+Define your own validation rule which will be checked when control leaves the textbox.
+
+2. Similar to @Viewchild, there is @Viewchildren which gets collection of queried components.
+Find out more about it and create a component to demonstrate it.

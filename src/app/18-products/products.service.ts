@@ -1,3 +1,8 @@
+//The following service is an example of http dervice.
+//Here we are capturing the response from the server in observable.
+//https://angular.io/guide/observables
+
+
 
 import { IProduct } from './product';
 import { Injectable } from '@angular/core';

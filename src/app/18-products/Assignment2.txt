@@ -1,0 +1,10 @@
+Create a Weather App
+Create a component where user can specify location get current weather information.
+Display current weather information with appropriate picture
+Display hourly and weekly weather in tabular format
+Following apis are needed to be accessed to get the information
+
+Use https://maps.googleapis.com site to get longitude and latitude information of the specified location
+use https://darksky.net/dev to access the weather information
+
+You can use parent child components to display relevant information

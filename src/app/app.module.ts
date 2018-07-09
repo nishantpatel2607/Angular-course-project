@@ -41,10 +41,10 @@ import { NgTemplateDemoComponent } from './11A-ng-template-demo/ng-template-demo
 import { NgTemplateOutletDemoComponent } from './11B-ng-template-outlet-demo/ng-template-outlet-demo.component';
 import { EnvironmentTestComponent } from './environment-test/environment-test.component';
 
-// {path:'parameters/:id/:id2', canActivate: [ TestParamGuard], component: TestParamsComponent},
 
+//Routes collection
 const app_routes: Routes = [ 
-  {path: '', component: HomeComponent},
+  {path: '', component: HomeComponent}, 
   {path: 'products', component: ProductsComponent},
   {path:'parameters/:id/:id2', canActivate: [ TestParamGuard], component:TestParamsComponent},
   {path:'queryparameters', component: QueryParametersComponent}
@@ -91,7 +91,7 @@ const app_routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule.forRoot(app_routes) 
+    RouterModule.forRoot(app_routes) // adding routes collection to routermodule 
   ],
   providers: [MathService, ProductsService, TestParamGuard],
   bootstrap: [AppComponent]

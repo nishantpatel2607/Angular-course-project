@@ -20,13 +20,14 @@ export class ProductsComponent implements OnInit {
 
   getAllProducts() { 
   
-    let sub = this.productsService.getAllProducts()  
-    .subscribe(products => {
+    this.productsService.getAllProducts().subscribe(products => {
       this.products = products;
     }, (error) => {console.log(error); },
     () => {console.log(this.products); });
 
-    sub.unsubscribe();
+    
+
+    //sub.unsubscribe();
   }
 
   getProduct() {

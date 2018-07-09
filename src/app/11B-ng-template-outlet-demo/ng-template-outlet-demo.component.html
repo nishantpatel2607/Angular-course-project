@@ -1,5 +1,8 @@
+<!--In this example #coloredDivTemplate will be displayed in two different locations
+with its context set to two seperate context objects-->
 
-
+<!--The let keyword create a template variable background which will get its value 
+  from backColor variable-->
 <ng-template #coloredDivTemplate let-background="backColor" >
   <div style="height: 30px" [ngStyle]="{'background-color': background}">{{background}}</div> 
 </ng-template> 

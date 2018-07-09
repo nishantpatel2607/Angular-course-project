@@ -1,0 +1,7 @@
+Create a panel with three sections
+Header
+Body
+Footer
+
+User should be able to set colors of all the sections individualy
+Body section should be collapsible. Put a round button in the header which can toggle its state
